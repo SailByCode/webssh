@@ -40,6 +40,7 @@ http://<server_ip>:<server_port>/ssh/<ssh_target>?username=<username>&password=<
 **login page**: http://127.0.0.1:8000/login
 
 **telent 127.0.01 23**: http://127.0.0.1:8000/telnet/127.0.0.1/23
+
 http://<server_ip>:<server_port>/telnet/<telnet_target>/<telnet_port>?server_username=<server_username>&server_password=<server_password>?server_port=<server_port>
 
 **parameters of server as a ssh bastion host**:
