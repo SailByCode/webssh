@@ -154,4 +154,5 @@ body {
 
 .xterm-viewport {
   overflow: hidden !important;
+  padding: 0px 32px 0px 32px;
 }
