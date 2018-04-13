@@ -8,24 +8,26 @@
     <link href="../../static/node_modules/xterm/dist/xterm.css" rel="stylesheet" type="text/css"/>
     <link href="../../static/css/tooltip.css" rel="stylesheet" type="text/css"/>
     <link href="../../static/css/main.css" rel="stylesheet" type="text/css"/>
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
+    <!-- <script src="../../static/node_modules/requirejs/require.js"></script> -->
+    <!-- <script src="../../static/node_modules/bundlejs/lib/bundle.js"></script> -->
+    <script type="module" src="../../static/node_modules/xterm/dist/xterm.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/attach/attach.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/fit/fit.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/fullscreen/fullscreen.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/search/search.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/terminado/terminado.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/webLinks/webLinks.js"></script>
+    <script type="module" src="../../static/node_modules/xterm/dist/addons/winptyCompat/winptyCompat.js"></script>
 </head>
 
 <body>
-<div id="term" align="center">
-</div>
+<div id="term" align="center"></div>
 <div id="navbar" class="navbar">
     <span id="title">Web SSH</span>
     <a href="../../login" target="_blank" id="login-btn">Login</a>
 </div>
-<script src="http://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
-<!-- <script src="../../static/node_modules/requirejs/require.js"></script> -->
-<!-- <script src="../../static/node_modules/bundlejs/lib/bundle.js"></script> -->
-<script type="module" src="../../static/node_modules/xterm/dist/xterm.js"></script>
-<script type="module" src="../../static/node_modules/xterm/dist/addons/fit/fit.js"></script>
-
-<!-- <script type="module" src="../../static/js/xterm.module.js"></script> -->
-
-
 <script src="../../static/js/ws.js"></script>
 <script src="../../static/js/formvalid.js"></script>
 <script src="../../static/js/main.js"></script>
