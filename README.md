@@ -30,7 +30,7 @@ Usage
 -----------
 **login with url parameters**: http://127.0.0.1:8000/ssh/127.0.0.1
 
-http://<server_ip>:<server_port>/ssh/<ssh_target>?username=<username>&password=<password>&port=<port>
+http://<server_ip>:<server_port>/ssh/<ssh_target>?username=<username>&password=<password>&port=<*port*>
 
 **parameters of ssh target**:
 - username
