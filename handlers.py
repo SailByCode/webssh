@@ -1,4 +1,7 @@
-__author__ = 'xsank'
+# File: handlers.py
+#
+# Author: Sail, xsank
+#
 
 import logging
 
@@ -48,7 +51,7 @@ class TelnetHandler(tornado.web.RequestHandler):
         options["username"] = server_username
         options["secret"] = server_password
         options["ispwd"] = True
-        
+
         options["telnet_host"] = telnet_host
         options["telnet_port"] = telnet_port
         #options["telnet_username"] = username
