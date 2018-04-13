@@ -8,6 +8,7 @@ this project is based on [xsank/webssh](https://github.com/xsank/webssh),
 
 Enhencement
 ------------
+- use [xterm.js](https://github.com/xtermjs/xterm.js/)
 - visualization is improved
 - easy of use
 - provide a way to ssh to target with the url directly
@@ -29,9 +30,9 @@ Information
 Usage
 -----------
 **login with url parameters**: http://127.0.0.1:8000/ssh/127.0.0.1
-
+```
 http://<server_ip>:<server_port>/ssh/<ssh_target>?username=<username>&password=<password>&port=<*port*>
-
+```
 **parameters of ssh target**:
 - username
 - password
@@ -40,9 +41,9 @@ http://<server_ip>:<server_port>/ssh/<ssh_target>?username=<username>&password=<
 **login page**: http://127.0.0.1:8000/login
 
 **telent 127.0.01 23**: http://127.0.0.1:8000/telnet/127.0.0.1/23
-
+```
 http://<server_ip>:<server_port>/telnet/<telnet_target>/<telnet_port>?server_username=<server_username>&server_password=<server_password>?server_port=<server_port>
-
+```
 **parameters of server as a ssh bastion host**:
 - server_username
 - server_password
