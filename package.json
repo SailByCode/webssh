@@ -1,0 +1,23 @@
+{
+  "name": "webssh",
+  "version": "1.0.1",
+  "description": "SSH terminal in WEB",
+  "main": "index.js",
+  "dependencies": {
+    "xterm": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.wgti.net:ZhanhongFan/webssh.git"
+  },
+  "keywords": [
+    "web",
+    "ssh"
+  ],
+  "author": "Joseph.Fan\u001b[D\u001b[D\u001b[",
+  "license": "MIT"
+}

@@ -66,11 +66,13 @@ class EPollIOLoop(IOLoop):
         while True:
             poll_list = self.impl.poll()
             for fd, events in poll_list:
+                #logging.info(fd, events, select.EPOLLIN)
                 if select.EPOLLIN & events:
                     while True:
                         try:
                             data = self.bridges[fd].shell.recv(MAX_DATA_BUFFER)
                         except socket.error as e:
+                            #logging.error(e)
                             if e.errno == errno.EAGAIN:
                                 self.impl.modify(fd, select.EPOLLET)
                             elif isinstance(e, socket.timeout):
@@ -80,6 +82,7 @@ class EPollIOLoop(IOLoop):
                         try:
                             self.futures[fd].send(data)
                         except StopIteration:
+                            logging.info('Connection stopped')
                             break
                 elif select.EPOLLHUP & events:
                     self.close(fd)
@@ -117,6 +120,7 @@ class SelectIOLoop(IOLoop):
                             try:
                                 data = self.bridges[fd].shell.recv(MAX_DATA_BUFFER)
                             except socket.error as e:
+                                #logging.error(e)
                                 if isinstance(e, socket.timeout):
                                     break
                                 else:
@@ -124,6 +128,7 @@ class SelectIOLoop(IOLoop):
                             try:
                                 self.futures[fd].send(data)
                             except StopIteration:
+                                logging.info('Connection stoped')
                                 break
                     elif self.ERROR & events:
                         self.close(fd)
@@ -160,6 +165,7 @@ class KQueueIOLoop(IOLoop):
                         try:
                             data = self.bridges[fd].shell.recv(MAX_DATA_BUFFER)
                         except socket.error as e:
+                            #logging.error(e)
                             if isinstance(e, socket.timeout):
                                 break
                             else:
@@ -167,6 +173,7 @@ class KQueueIOLoop(IOLoop):
                         try:
                             self.futures[fd].send(data)
                         except StopIteration:
+                            logging.info('Connection stopped')
                             break
                 elif select.KQ_EV_ERROR & events:
                     self.close(fd)

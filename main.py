@@ -1,7 +1,4 @@
-__author__ = 'xsank'
-
 import os.path
-
 import tornado.ioloop
 import tornado.web
 import tornado.httpserver
@@ -11,11 +8,14 @@ from tornado.options import options
 from config import init_config
 from urls import handlers
 from ioloop import IOLoop
+import logging
+
 
 settings = dict(
     template_path=os.path.join(os.path.dirname(__file__), "templates"),
     static_path=os.path.join(os.path.dirname(__file__), "static"),
 )
+__author__ = 'xsank'
 
 
 class Application(tornado.web.Application):

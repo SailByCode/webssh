@@ -6,10 +6,11 @@
     padding: 8px 10px;
     border-radius: 5px;
     color: #fff;
-    background: #000000;
+    background: #FFCA28;
     box-shadow: 0 2px 2px 0 #7F7C7C;
     white-space: nowrap;
 }
+
 .tooltip:after{
     content: '';
     position: absolute;
@@ -19,7 +20,7 @@
     width: 0;
     height: 0;
     border: 5px solid transparent;
-    border-right: 7px #000;
+    border-right: 7px #EFEFEF;
     border-left-width: 7px;
 }
 

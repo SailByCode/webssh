@@ -60,7 +60,7 @@ target/
 .idea
 
 # js
-term.js
+#term.js
 
 # not finished files
 _*.*
