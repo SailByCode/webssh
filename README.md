@@ -66,10 +66,10 @@ log_file_num_backups = 7
 Preview
 -------
 <div align="center">
-    <img src="https://raw.githubusercontent.com/xsank/webssh/master/preview/login.png" width = "600" height = "377" alt="login" />
+    <img src="https://raw.githubusercontent.com/SailByCode/webssh/master/preview/login.png" width = "600" height = "377" alt="login" />
 </div>
 <div align="center">
-    <img src="https://raw.githubusercontent.com/xsank/webssh/master/preview/htop.png" width = "600" height = "295" alt="htop" />
+    <img src="https://raw.githubusercontent.com/SailByCode/webssh/master/preview/htop.png" width = "600" height = "295" alt="htop" />
 </div>
 
 
